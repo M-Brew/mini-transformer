@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+
+# IDEs
+.idea/
+.vscode/
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
+
+# Data: keep directory structure, not datasets
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Generated artifacts
+artifacts/*
+!artifacts/README.md
+
+# Experiment output
+experiments/results/*
+!experiments/results/.gitkeep
