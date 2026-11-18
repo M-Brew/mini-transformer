@@ -6,6 +6,74 @@ from pathlib import Path
 import torch
 from torch import Tensor
 
+# ASCII "record separator". Marks document boundaries in the raw corpus and
+# becomes an ordinary vocabulary character, so the model can learn where
+# documents end. Corpus cleaning guarantees it never occurs inside a document.
+DOCUMENT_SEPARATOR = "\x1e"
+
+
+def join_documents(documents: list[str]) -> str:
+    """Serialize documents, each followed by a separator line."""
+
+    if not documents:
+        raise ValueError("documents cannot be empty")
+
+    for document in documents:
+        if not document.strip():
+            raise ValueError("documents cannot be blank")
+
+        if DOCUMENT_SEPARATOR in document:
+            raise ValueError("documents cannot contain the separator")
+
+    return "".join(
+        f"{document}\n{DOCUMENT_SEPARATOR}\n" for document in documents
+    )
+
+
+def split_documents(text: str) -> list[str]:
+    """Inverse of join_documents. Blank fragments are discarded."""
+
+    fragments = (
+        fragment.strip("\n") for fragment in text.split(DOCUMENT_SEPARATOR)
+    )
+
+    return [fragment for fragment in fragments if fragment.strip()]
+
+
+def split_train_validation_documents(
+    documents: list[str],
+    validation_fraction: float = 0.1,
+) -> tuple[list[str], list[str]]:
+    """
+    Assign whole documents to training or validation.
+
+    Validation documents are spaced evenly through the corpus (document i is
+    held out when floor((i + 1) * f) > floor(i * f)), so every part of the
+    corpus is represented and no document is split across partitions. The
+    rule is deterministic: the same corpus always produces the same split.
+    """
+
+    if not 0.0 < validation_fraction < 1.0:
+        raise ValueError(
+            "validation_fraction must be between 0 and 1"
+        )
+
+    train: list[str] = []
+    validation: list[str] = []
+
+    for index, document in enumerate(documents):
+        if int((index + 1) * validation_fraction) > int(
+            index * validation_fraction
+        ):
+            validation.append(document)
+        else:
+            train.append(document)
+
+    if not train or not validation:
+        raise ValueError("Split would produce an empty partition")
+
+    return train, validation
+
 
 class LanguageModelDataset:
     """Stores tokenized data and produces next-token training batches."""

@@ -1,0 +1,2509 @@
+{
+  "name": "Jane Austen novels (Project Gutenberg)",
+  "built_at": "2026-11-18T10:48:44+00:00",
+  "builder": "scripts/build_corpus.py",
+  "license": "Public domain. Project Gutenberg headers, footers and license text are removed, so the Project Gutenberg License does not apply to the derived corpus.",
+  "corpus": {
+    "path": "data/raw/corpus.txt",
+    "encoding": "utf-8",
+    "bytes": 4061888,
+    "characters": 4006051,
+    "sha256": "12698b44711f0a45c0a41ff388d83de1f82410f2be1255949085a2ca0bf5270b",
+    "documents": 269,
+    "document_unit": "chapter",
+    "document_separator": "U+001E",
+    "distinct_characters": 89
+  },
+  "split": {
+    "method": "whole documents, evenly spaced (mini_transformer.dataset.split_train_validation_documents)",
+    "validation_fraction": 0.1,
+    "validation_documents": 26,
+    "train_documents": 243,
+    "validation_character_share": 0.0914
+  },
+  "sources": [
+    {
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "first_published": 1811,
+      "source_url": "https://gutenberg.pglaf.org/cache/epub/161/pg161.txt",
+      "source_bytes": 712852,
+      "source_sha256": "7bcd77c45cb32fb8d9f89402561270cc6a911c0a4e20667176d5be779fc3974a",
+      "chapters": 50,
+      "characters": 667837
+    },
+    {
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "first_published": 1813,
+      "source_url": "https://gutenberg.pglaf.org/cache/epub/1342/pg1342.txt",
+      "source_bytes": 772386,
+      "source_sha256": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75",
+      "chapters": 61,
+      "characters": 683926
+    },
+    {
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "first_published": 1814,
+      "source_url": "https://gutenberg.pglaf.org/cache/epub/141/pg141.txt",
+      "source_bytes": 929142,
+      "source_sha256": "b34723544dbe8185e786d0fdd47e42e7e1ac4265b84141e31ca260c1e36b68d8",
+      "chapters": 48,
+      "characters": 880878
+    },
+    {
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "first_published": 1815,
+      "source_url": "https://gutenberg.pglaf.org/cache/epub/158/pg158.txt",
+      "source_bytes": 933709,
+      "source_sha256": "532b122b4e6a76cc556d6fdcd729b5892f5c4ce4a1b7060b9f832adfad8680dc",
+      "chapters": 55,
+      "characters": 877723
+    },
+    {
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "first_published": 1817,
+      "source_url": "https://gutenberg.pglaf.org/cache/epub/121/pg121.txt",
+      "source_bytes": 468036,
+      "source_sha256": "273d7d35f8cc0286812bdb26ccc17f362b4f2d0d69a2ec96ca403fac8505b709",
+      "chapters": 31,
+      "characters": 431056
+    },
+    {
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "first_published": 1817,
+      "source_url": "https://gutenberg.pglaf.org/cache/epub/105/pg105.txt",
+      "source_bytes": 497555,
+      "source_sha256": "7365e47089a3d63c64b011342bd00e2375cc51ee642dcf9af5aaba75cfd771bc",
+      "chapters": 24,
+      "characters": 463824
+    }
+  ],
+  "documents": [
+    {
+      "index": 0,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 1,
+      "characters": 8880,
+      "sha256": "d911b60c4ca01bff757a4460d9c5274a768478e45a1a4ae0393d40a9afece568",
+      "split": "train"
+    },
+    {
+      "index": 1,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 2,
+      "characters": 10716,
+      "sha256": "4882e4d809a9e51a159e8b83aea7744aa0ad13f0a74ffe2fecb6a13bf3667d5f",
+      "split": "train"
+    },
+    {
+      "index": 2,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 3,
+      "characters": 8781,
+      "sha256": "45c84ca5691f8eee654e96142508ce334ea60ff7ca1009757011799577685135",
+      "split": "train"
+    },
+    {
+      "index": 3,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 4,
+      "characters": 10988,
+      "sha256": "4776bd715de885b228d301bfde02cfbff7565331836d079b7b26118b2c489618",
+      "split": "train"
+    },
+    {
+      "index": 4,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 5,
+      "characters": 5801,
+      "sha256": "de8a7acc05c8bd0386fc390cf53cf9679c01d30c23b336e4ef47f15aa98ae95b",
+      "split": "train"
+    },
+    {
+      "index": 5,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 6,
+      "characters": 7487,
+      "sha256": "38968cc055047e315cf28ec238896389da42aeed2e882686e27dcda2d85481a2",
+      "split": "train"
+    },
+    {
+      "index": 6,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 7,
+      "characters": 7361,
+      "sha256": "e55fa1e81a0917295106215ebb6c52f0e1464bebfc69fa8d335b8c063f1ed36b",
+      "split": "train"
+    },
+    {
+      "index": 7,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 8,
+      "characters": 6988,
+      "sha256": "5157d62c557c6c650ee033087a9d92847414ad7a4deb2c955f905b789807fe85",
+      "split": "train"
+    },
+    {
+      "index": 8,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 9,
+      "characters": 10466,
+      "sha256": "78688f89f2f64585342bd240dd08aa2e74c578034ac82f645f356e61e49be345",
+      "split": "train"
+    },
+    {
+      "index": 9,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 10,
+      "characters": 11956,
+      "sha256": "df165866ba004435fc925bcf70f12e5a19054af9d896ecc6ebbfe7cd818d24ff",
+      "split": "validation"
+    },
+    {
+      "index": 10,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 11,
+      "characters": 8391,
+      "sha256": "5326f65efb07ef0eaaf36f848b3ac3818a270798695d5f7e8afdb6a87b24eb8b",
+      "split": "train"
+    },
+    {
+      "index": 11,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 12,
+      "characters": 9190,
+      "sha256": "7ace66589b4ac3bff2d306836eb5b56df07a96e375ee18d64ff91b463f9a7677",
+      "split": "train"
+    },
+    {
+      "index": 12,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 13,
+      "characters": 11505,
+      "sha256": "c43782d71096f1642db1c206a3a65c4ad05b1272c488c1411cbdcab133ae8bad",
+      "split": "train"
+    },
+    {
+      "index": 13,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 14,
+      "characters": 8353,
+      "sha256": "39786022f714995363bcc757607dfc0a193a19af21eb2da4204c3ac2dbdec8a8",
+      "split": "train"
+    },
+    {
+      "index": 14,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 15,
+      "characters": 14235,
+      "sha256": "860942ee80903b32228cf381dc2104e0e39d2c641387563b4e3030a48b3bb8ec",
+      "split": "train"
+    },
+    {
+      "index": 15,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 16,
+      "characters": 11412,
+      "sha256": "3efdcea71a36250e052b3a8b711f77cabcbd920c4c90d66de8d083b3b1b40793",
+      "split": "train"
+    },
+    {
+      "index": 16,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 17,
+      "characters": 9108,
+      "sha256": "6cf9e8f491e4af52317221456b5dba02c68381231901c0d1dff3d667988cb075",
+      "split": "train"
+    },
+    {
+      "index": 17,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 18,
+      "characters": 8654,
+      "sha256": "df4146fd62259da6ecf3ed7f0a3cb67bdd11fcfa3ae10dc742e3c0b360855a81",
+      "split": "train"
+    },
+    {
+      "index": 18,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 19,
+      "characters": 16160,
+      "sha256": "39b5991e85e7bc551003a0318ee3c9fb4f0c40e66ab59434bf9b63cc9d9446b5",
+      "split": "train"
+    },
+    {
+      "index": 19,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 20,
+      "characters": 12865,
+      "sha256": "73a7942fe3797ac4a54635fb438401904e684022e9c005398c5928a9eb7e8c17",
+      "split": "validation"
+    },
+    {
+      "index": 20,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 21,
+      "characters": 16562,
+      "sha256": "f02976c1c6fde4995000bdb377556e50b3f34001da4a602aaaa84657b70d8596",
+      "split": "train"
+    },
+    {
+      "index": 21,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 22,
+      "characters": 15444,
+      "sha256": "396ef8afc1d1b9170e498cc81565731c8950727fdba143c927cfaaf399ca6f42",
+      "split": "train"
+    },
+    {
+      "index": 22,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 23,
+      "characters": 13630,
+      "sha256": "4d6f81e6adb4c63d099f7266763bf806d8d1a7fbf077fabe6a82061911fb7449",
+      "split": "train"
+    },
+    {
+      "index": 23,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 24,
+      "characters": 11522,
+      "sha256": "89c1ccdac47a5caa79a2e0b745b3c5240eb026e31bb8e8ef73aedc13f1c7d111",
+      "split": "train"
+    },
+    {
+      "index": 24,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 25,
+      "characters": 10803,
+      "sha256": "925e20c61e5200b6149d282b61d0d5f8f912ed44950a69e7b1f779692f3de29a",
+      "split": "train"
+    },
+    {
+      "index": 25,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 26,
+      "characters": 14370,
+      "sha256": "15a4fac7860dd7f718fe63ab4e846d7101009c2adfce36bf7106396247d3ed4e",
+      "split": "train"
+    },
+    {
+      "index": 26,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 27,
+      "characters": 14169,
+      "sha256": "952b146a82ef1c3a3ff6bef5d1de617d5667f9b1176be901183032e4530812b1",
+      "split": "train"
+    },
+    {
+      "index": 27,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 28,
+      "characters": 8290,
+      "sha256": "b48b3522f2c173e59a57a2d45e989616bf3485b836d93d7e3aab5af58ba3a957",
+      "split": "train"
+    },
+    {
+      "index": 28,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 29,
+      "characters": 21149,
+      "sha256": "0217cc2002422b14b55f4ed9be39bb78ee94f285c83a005bd1693af307b57a46",
+      "split": "train"
+    },
+    {
+      "index": 29,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 30,
+      "characters": 16374,
+      "sha256": "9482efe39386c9f0c57ae1ad301cdee7590779291a97a4c28c702a7b26530cae",
+      "split": "validation"
+    },
+    {
+      "index": 30,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 31,
+      "characters": 21207,
+      "sha256": "ae29acaddb43acd2ba9d01b7ea90fb5daf3154c3dab905e463306091183e893b",
+      "split": "train"
+    },
+    {
+      "index": 31,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 32,
+      "characters": 14539,
+      "sha256": "8b97e3788304f048f94b912646ec80fa08c06e3d8460a4f581ea070e81e1efd6",
+      "split": "train"
+    },
+    {
+      "index": 32,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 33,
+      "characters": 16774,
+      "sha256": "58774ad9d6931826811bf17c044012d597aaf0292ca326f38c69f3d0010aecf5",
+      "split": "train"
+    },
+    {
+      "index": 33,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 34,
+      "characters": 15195,
+      "sha256": "3898f11560acdbc7e49a8d628b6d323419e9c63cf4c4681c699422f5019c71d5",
+      "split": "train"
+    },
+    {
+      "index": 34,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 35,
+      "characters": 12956,
+      "sha256": "8741fea8f0190ecb0750e83be60969fb83fec1895723e38e629927524ac69b15",
+      "split": "train"
+    },
+    {
+      "index": 35,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 36,
+      "characters": 17362,
+      "sha256": "cae7ec9e7190240b081c6b8fb0edbb5356b10b8a144cf72f9f827d8e9b0b9892",
+      "split": "train"
+    },
+    {
+      "index": 36,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 37,
+      "characters": 24478,
+      "sha256": "c869b3a2233cae1b67920d9faf1847de4b71c946e92e7c8b19218c1184db89fa",
+      "split": "train"
+    },
+    {
+      "index": 37,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 38,
+      "characters": 16570,
+      "sha256": "62e0f180528fb5e89816a594bf7a6cceaf13615bb3c8ac3e82c775552bae37b6",
+      "split": "train"
+    },
+    {
+      "index": 38,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 39,
+      "characters": 11169,
+      "sha256": "86186a066758e949594f179cd5aba94ffa93c2eb24e1086577ea3aab399453e2",
+      "split": "train"
+    },
+    {
+      "index": 39,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 40,
+      "characters": 14220,
+      "sha256": "40ea0d0b17f42a2913338fa602240c8ba58d2217b1f70b20604ad7897df9fbca",
+      "split": "validation"
+    },
+    {
+      "index": 40,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 41,
+      "characters": 14413,
+      "sha256": "81e2a07dd20b8d0fa22a428344d541e9fff4c4fc192ed1893e7c07bdf2b30cad",
+      "split": "train"
+    },
+    {
+      "index": 41,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 42,
+      "characters": 10335,
+      "sha256": "2f190ea01a709e932de7b9685ace1c6e811fd4c79c881acdd2a56d0bcfe9d4e2",
+      "split": "train"
+    },
+    {
+      "index": 42,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 43,
+      "characters": 19652,
+      "sha256": "9ec3a085da87ba67a00bd8de51f8794978c97384bbb87c2631651485bd2b3493",
+      "split": "train"
+    },
+    {
+      "index": 43,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 44,
+      "characters": 29983,
+      "sha256": "3c7c37e4168476f21b0fd0193128ddf9d06328b1b88d0ca1a407bce63937f74d",
+      "split": "train"
+    },
+    {
+      "index": 44,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 45,
+      "characters": 12084,
+      "sha256": "df0fec09300697c5391f5cec6fd0f9c0368c8c1765f3863f21594d084c0db8c4",
+      "split": "train"
+    },
+    {
+      "index": 45,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 46,
+      "characters": 16375,
+      "sha256": "bc139fc528457c3e7edee6914958d66862eb07afebe3b12e746a650729c21288",
+      "split": "train"
+    },
+    {
+      "index": 46,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 47,
+      "characters": 13449,
+      "sha256": "a54e584ea84e29addf81b5547890cfd2dc2475bf9cd705e4d7e39ebec08e262e",
+      "split": "train"
+    },
+    {
+      "index": 47,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 48,
+      "characters": 7277,
+      "sha256": "0403e3d6c217d4fa6712d537324369b6efe20f58ee426dbb9dc212f1e9b00acd",
+      "split": "train"
+    },
+    {
+      "index": 48,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 49,
+      "characters": 23707,
+      "sha256": "af7552b30699b8a4071d08a4335480875da763c3423a4578534196b7ac74223a",
+      "split": "train"
+    },
+    {
+      "index": 49,
+      "gutenberg_id": 161,
+      "title": "Sense and Sensibility",
+      "chapter": 50,
+      "characters": 14482,
+      "sha256": "e0a110d2be92b88220b818e27c4c2f1aab5b307d19b40bbabd546a6e61b8ecc7",
+      "split": "validation"
+    },
+    {
+      "index": 50,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 1,
+      "characters": 4475,
+      "sha256": "9cd840c8e40f6f846706cda7f9d87cf2d633e4ba38584314620432b29159dcdd",
+      "split": "train"
+    },
+    {
+      "index": 51,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 2,
+      "characters": 4293,
+      "sha256": "51b94284818d0590dcd8dc072ec962d7b0f385c081a5d3e5c8a9976d0e05e4b0",
+      "split": "train"
+    },
+    {
+      "index": 52,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 3,
+      "characters": 9552,
+      "sha256": "8094988bf4d30c6dbef24d33fa0c2468b967aec293a1d7cb31ee13e72bb22fdc",
+      "split": "train"
+    },
+    {
+      "index": 53,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 4,
+      "characters": 5924,
+      "sha256": "e06cbd96b06aec54a87d743370b908c5c0d929d4e8395cf776142d75e9dcb8ea",
+      "split": "train"
+    },
+    {
+      "index": 54,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 5,
+      "characters": 5242,
+      "sha256": "1013b22132362216b241c4cbb2020df78d2da82fbf5184c057cee979f27ef4cf",
+      "split": "train"
+    },
+    {
+      "index": 55,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 6,
+      "characters": 13012,
+      "sha256": "0e6a9fad121f1c8763e1552312ade13fa117ddfc38040987735f1076c1031971",
+      "split": "train"
+    },
+    {
+      "index": 56,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 7,
+      "characters": 11168,
+      "sha256": "dcc728f0108fad2864dc5c46e277e07307551c844e6077d732296b3651a95229",
+      "split": "train"
+    },
+    {
+      "index": 57,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 8,
+      "characters": 10986,
+      "sha256": "774916499cc3769c3c19a43d6526cbeee42212429593f2135bcc5afebdeab235",
+      "split": "train"
+    },
+    {
+      "index": 58,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 9,
+      "characters": 9745,
+      "sha256": "45dcd2fa842789e4b5faa0c9e07935c46851469a14d92dea280a9e189fb4e7d9",
+      "split": "train"
+    },
+    {
+      "index": 59,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 10,
+      "characters": 12495,
+      "sha256": "47a2ea51283be2553e353fa4e7de5803f6e8e8f8a32661f5ea595818daf3c1a3",
+      "split": "validation"
+    },
+    {
+      "index": 60,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 11,
+      "characters": 8929,
+      "sha256": "718c400998fe438904ee441cfff6bce239d3f19497607474e8e013f9348da99a",
+      "split": "train"
+    },
+    {
+      "index": 61,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 12,
+      "characters": 3926,
+      "sha256": "5767952e688f7a5f8eb915aa8da4e87be699814664c6db9581b008c4868ada10",
+      "split": "train"
+    },
+    {
+      "index": 62,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 13,
+      "characters": 9286,
+      "sha256": "596d88ad6a9249d387da5ac2de9d5411abb23b6d74ee5d6a413624b907a1f699",
+      "split": "train"
+    },
+    {
+      "index": 63,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 14,
+      "characters": 6443,
+      "sha256": "9e90be926fa2d5ebb1c1074367429f1e55457392b9e4420b84e2ed9d4c34e1eb",
+      "split": "train"
+    },
+    {
+      "index": 64,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 15,
+      "characters": 9780,
+      "sha256": "762829c59fd27d87b1ef6528c098e232c89ef01237368ed8012832cedcd2ef63",
+      "split": "train"
+    },
+    {
+      "index": 65,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 16,
+      "characters": 19023,
+      "sha256": "e5faf4b2bbb9af19868cfe802356896f48b91aa154cfdf02df7d9da115fc5718",
+      "split": "train"
+    },
+    {
+      "index": 66,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 17,
+      "characters": 7270,
+      "sha256": "2196ee7fe1705d8ea4cdb45f64cedb5a569580836d672fcc5761eaa9056cec77",
+      "split": "train"
+    },
+    {
+      "index": 67,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 18,
+      "characters": 29149,
+      "sha256": "3ee92e124ee5eb0d15d4c533d56382296a945316d21fdc0059318fbf3496f773",
+      "split": "train"
+    },
+    {
+      "index": 68,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 19,
+      "characters": 10659,
+      "sha256": "0f47ded920b4394ff50254c3fe2730e3226862c3609d9b7e5d49724d2bdb0511",
+      "split": "train"
+    },
+    {
+      "index": 69,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 20,
+      "characters": 9174,
+      "sha256": "b2c76f4d7609c6a2ade6f22114f6201708a470d15dc87509b06b1b9cf381a4b9",
+      "split": "validation"
+    },
+    {
+      "index": 70,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 21,
+      "characters": 11274,
+      "sha256": "ff59c253eb3acdd8bb0e57dd60c87336fcea5aac35d230e3993e10b114041427",
+      "split": "train"
+    },
+    {
+      "index": 71,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 22,
+      "characters": 10003,
+      "sha256": "53ff9a5aabf4ab703320c0e159c69782c55db07b90794493b6f8e094b4fe4ec5",
+      "split": "train"
+    },
+    {
+      "index": 72,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 23,
+      "characters": 9313,
+      "sha256": "06b945140ace6a427323078c7ed2e5d03d98c2f4f55a068ac5dd9479844df0f2",
+      "split": "train"
+    },
+    {
+      "index": 73,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 24,
+      "characters": 10821,
+      "sha256": "a32d8419bc4a8a5597759a599dfe63596bac7605455a712bb212ab1fd05fadb1",
+      "split": "train"
+    },
+    {
+      "index": 74,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 25,
+      "characters": 8590,
+      "sha256": "078f0560bee72f883c27044c02b5ceca6beed7413598daeee987674ba0deb516",
+      "split": "train"
+    },
+    {
+      "index": 75,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 26,
+      "characters": 12757,
+      "sha256": "86ad3ee1723eeaffea45495618c8b1be34d56783bf02b10f642c36522b3a4045",
+      "split": "train"
+    },
+    {
+      "index": 76,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 27,
+      "characters": 7201,
+      "sha256": "35016fd018c4199e165def449db932900f76dd9aee97bc27ba5db92a882fc3fb",
+      "split": "train"
+    },
+    {
+      "index": 77,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 28,
+      "characters": 8232,
+      "sha256": "e848aad437b89b1cbd7a17711186200fe91638a17c9292c75041bbcd0d81350d",
+      "split": "train"
+    },
+    {
+      "index": 78,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 29,
+      "characters": 13684,
+      "sha256": "24b058b2e12892511cb844a44c70d41eb555dc6d4413b3313799048decf72685",
+      "split": "train"
+    },
+    {
+      "index": 79,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 30,
+      "characters": 7063,
+      "sha256": "bdadbb1fa72ae29d80ec10896dcd7959280291b299e7bf8ccfee666e42084869",
+      "split": "validation"
+    },
+    {
+      "index": 80,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 31,
+      "characters": 8742,
+      "sha256": "415cd1083307bdf562aa44db0b3ca8be61416f14fe1d7b51999315e897a701d6",
+      "split": "train"
+    },
+    {
+      "index": 81,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 32,
+      "characters": 8453,
+      "sha256": "d8aca74ce3555c8659f2a55b74afd47638e8b76b72cfa7417cf4dbec50528926",
+      "split": "train"
+    },
+    {
+      "index": 82,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 33,
+      "characters": 10378,
+      "sha256": "1077bcc817fa19a78a675fc940b1a5ab394e208e998932b405ecd41b64ffa5ea",
+      "split": "train"
+    },
+    {
+      "index": 83,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 34,
+      "characters": 12000,
+      "sha256": "548c437c653516c408f1d7b78f22416e22c97257af8383fa22957ce2c89bc0e6",
+      "split": "train"
+    },
+    {
+      "index": 84,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 35,
+      "characters": 16972,
+      "sha256": "17fe38c7f005a00d2fee9ed93f78092ea6c63e4e6725014519564db17b27d4a6",
+      "split": "train"
+    },
+    {
+      "index": 85,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 36,
+      "characters": 11787,
+      "sha256": "fc2c8b41f57df27ba87f31fa7418303a23b1c5e828d8e7931434ed539b6578e7",
+      "split": "train"
+    },
+    {
+      "index": 86,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 37,
+      "characters": 7780,
+      "sha256": "b0b9faf057ac72f47f9e88d9b9deb3573e723596d7ce1494066ad8d4a48458bc",
+      "split": "train"
+    },
+    {
+      "index": 87,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 38,
+      "characters": 5951,
+      "sha256": "31ea61401860de5dd29fa128f20f8caef7ad8828ef75243242680b40f29609dc",
+      "split": "train"
+    },
+    {
+      "index": 88,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 39,
+      "characters": 8772,
+      "sha256": "544cc508352df285e55de5b357aa00233ff626442238da9e23a2f43d65381a9b",
+      "split": "train"
+    },
+    {
+      "index": 89,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 40,
+      "characters": 9189,
+      "sha256": "7a40cfb15386d24eebe0259eb7ec6943038bbed45de3b4e70b487399e1995724",
+      "split": "validation"
+    },
+    {
+      "index": 90,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 41,
+      "characters": 13006,
+      "sha256": "bacd18158483af89a1c73706a8c600a9477d58f487e935002af04567b617963a",
+      "split": "train"
+    },
+    {
+      "index": 91,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 42,
+      "characters": 10635,
+      "sha256": "9bd533610f5861a69e2a092899517cb731b983869a9189fd44c7a1034be22458",
+      "split": "train"
+    },
+    {
+      "index": 92,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 43,
+      "characters": 27500,
+      "sha256": "80af83962c8b3d6c7063bef5647d09d3f37bec2c0329b954165a1f5c46c11f17",
+      "split": "train"
+    },
+    {
+      "index": 93,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 44,
+      "characters": 13366,
+      "sha256": "f702445afb57f2b88c48ca62522f01ef518b8dab662628e18a528a45e0f75bbb",
+      "split": "train"
+    },
+    {
+      "index": 94,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 45,
+      "characters": 10097,
+      "sha256": "bb49f6c3e0ba3f5dd0f9fdd216bee7e4e75ac10c88951ea9590f92e38d6863c9",
+      "split": "train"
+    },
+    {
+      "index": 95,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 46,
+      "characters": 16927,
+      "sha256": "09dbc4493d514058a6f91b4fac44488b9cf7e84c6c7fc5636ac52229232bfd4e",
+      "split": "train"
+    },
+    {
+      "index": 96,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 47,
+      "characters": 22323,
+      "sha256": "cc20c55ff0174667e006ca0447d97bcc6d6ee8f63a73619e5bd8d7b0d3b25526",
+      "split": "train"
+    },
+    {
+      "index": 97,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 48,
+      "characters": 12562,
+      "sha256": "9e65e14ea88c5ada6acc75b1cfff68bac4f5a47e8146fd889e8f4c3356299504",
+      "split": "train"
+    },
+    {
+      "index": 98,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 49,
+      "characters": 12242,
+      "sha256": "2de1baad28bbb83d540b9c11c13ef6dc728f438f28738e6170184569f540afe1",
+      "split": "train"
+    },
+    {
+      "index": 99,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 50,
+      "characters": 12487,
+      "sha256": "dc19edfa9217807ad1bb509ab2da1ce7621cb3c774fbcb29ac6f9ac06810675b",
+      "split": "validation"
+    },
+    {
+      "index": 100,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 51,
+      "characters": 11232,
+      "sha256": "7c533a82566816d4318027bc50ae7f86f563b9e947776a9b7e5ca5c814c49a73",
+      "split": "train"
+    },
+    {
+      "index": 101,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 52,
+      "characters": 16511,
+      "sha256": "bbcd62f8e612522fa1de8bac1f55daab8803eaf167971496bd28345185051559",
+      "split": "train"
+    },
+    {
+      "index": 102,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 53,
+      "characters": 16086,
+      "sha256": "17a0a164f9771ce9f3fa64037d3799d631501dc4feefc604aedfcb2ddbf2a96a",
+      "split": "train"
+    },
+    {
+      "index": 103,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 54,
+      "characters": 8838,
+      "sha256": "8c1232c7ab73e64a1569e26ae431cd70b3a818779e0e16a9b46bc5d15d5482c0",
+      "split": "train"
+    },
+    {
+      "index": 104,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 55,
+      "characters": 12990,
+      "sha256": "db91b8fc47ca78540db426e1e40b92caf83c852e46efb28e6b07534045414e74",
+      "split": "train"
+    },
+    {
+      "index": 105,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 56,
+      "characters": 15320,
+      "sha256": "1b3b12016472641ff37d9eaae492987bb4108a45b2e966e9b7520b1e74d04479",
+      "split": "train"
+    },
+    {
+      "index": 106,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 57,
+      "characters": 9376,
+      "sha256": "bbe6afc4afac9db9dc2f71f57236ff206bd35bc4bd3bc4407d6d4896cf876dc2",
+      "split": "train"
+    },
+    {
+      "index": 107,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 58,
+      "characters": 13639,
+      "sha256": "d5fb922d6dae6eac7fb16693a8a81a798010caddc71bcfbcc4bb8b2553021198",
+      "split": "train"
+    },
+    {
+      "index": 108,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 59,
+      "characters": 13542,
+      "sha256": "e4046cbdcf16094d3e0c254a2ff07830c6dce8a55c54e66335335abe93b35eff",
+      "split": "train"
+    },
+    {
+      "index": 109,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 60,
+      "characters": 8684,
+      "sha256": "f86d963fe4a3cb292c8f50de9027eea179f85cac452feea52b9d8ff2ad17147c",
+      "split": "validation"
+    },
+    {
+      "index": 110,
+      "gutenberg_id": 1342,
+      "title": "Pride and Prejudice",
+      "chapter": 61,
+      "characters": 7070,
+      "sha256": "3f85a1653fbe7d9695b948a5e70ab55778f76161ff711cc9efcf0f62f8707931",
+      "split": "train"
+    },
+    {
+      "index": 111,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 1,
+      "characters": 17023,
+      "sha256": "2196a48d9e1a270dcd0b46964f01992ba39e7bb736720b81c9ae83d08b195ab7",
+      "split": "train"
+    },
+    {
+      "index": 112,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 2,
+      "characters": 20680,
+      "sha256": "1b77c389aed77f4ce9d9d975d3f8a3373814998463b6775c85d94c03f545a0f8",
+      "split": "train"
+    },
+    {
+      "index": 113,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 3,
+      "characters": 20070,
+      "sha256": "c5a1e0860bf4aaf41c7895cab20c4047f26f88871f215e1c86bde72d48cb663b",
+      "split": "train"
+    },
+    {
+      "index": 114,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 4,
+      "characters": 19495,
+      "sha256": "423a97e16a92b4aa302d60f804490a3fb4d000b6014a480b52d9e60bc8c8e697",
+      "split": "train"
+    },
+    {
+      "index": 115,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 5,
+      "characters": 15407,
+      "sha256": "3c150734cdd41e0bb486e320758a8dd265c1a748ff00ee6c220899d86f67de99",
+      "split": "train"
+    },
+    {
+      "index": 116,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 6,
+      "characters": 20671,
+      "sha256": "dae7733f033ebad49163a838c0b0a271c46d6b292afee7a5cdaf06ac7963940d",
+      "split": "train"
+    },
+    {
+      "index": 117,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 7,
+      "characters": 22990,
+      "sha256": "b7f8fad57cc28f314dffdcb6cc7ab7020541e2e0904e094d53a330181b5174e0",
+      "split": "train"
+    },
+    {
+      "index": 118,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 8,
+      "characters": 15649,
+      "sha256": "04ee6b95a1aeaeb7ec9782bd56347daaee6ed244292b9e64ed44bd8cd48e70a7",
+      "split": "train"
+    },
+    {
+      "index": 119,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 9,
+      "characters": 24766,
+      "sha256": "d084cdff76d2844f59f740f6b90c169a94d2018dce9837edf1b7d3144ebf8ceb",
+      "split": "validation"
+    },
+    {
+      "index": 120,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 10,
+      "characters": 18161,
+      "sha256": "fe7db38a6be75d9a1ce777ce06e5becd304c0bc58b8f6b15bbc7fdadead967bf",
+      "split": "train"
+    },
+    {
+      "index": 121,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 11,
+      "characters": 13347,
+      "sha256": "2720a45d124bf9ee3f1d9caf60716ddc6641e61e67a50099e6169c4eda9e86d3",
+      "split": "train"
+    },
+    {
+      "index": 122,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 12,
+      "characters": 12312,
+      "sha256": "f6379a453e9502e13c1479d53974eb5ebc09d29d71217af0fb15a69b9864797d",
+      "split": "train"
+    },
+    {
+      "index": 123,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 13,
+      "characters": 17271,
+      "sha256": "1b288ab19c7c2598345ab8c81aa25166bfbb5ef9328dbc18904e7a615b1ed614",
+      "split": "train"
+    },
+    {
+      "index": 124,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 14,
+      "characters": 14643,
+      "sha256": "f8fc82f12e57e0a9c70270dd0b6450cb3a029039619ce17c4c911a1691a594e2",
+      "split": "train"
+    },
+    {
+      "index": 125,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 15,
+      "characters": 21292,
+      "sha256": "0b5988acf886d57bdff99e606d2ac42fab3655cd28e4e517e5855338931f1fc1",
+      "split": "train"
+    },
+    {
+      "index": 126,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 16,
+      "characters": 13611,
+      "sha256": "ded427d021bfb76e3d2791b76d80121540343365567c2df489af022d2a2dcf64",
+      "split": "train"
+    },
+    {
+      "index": 127,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 17,
+      "characters": 10950,
+      "sha256": "28b881e4aa1de52d15ab9c7dca3fe7fe13560b2c84397a6b46c56fddb6d157ba",
+      "split": "train"
+    },
+    {
+      "index": 128,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 18,
+      "characters": 17097,
+      "sha256": "845d1c1df956dc51223aaeb0c39bcdfa4fcacd2327d3addd973ce82fc53f3c44",
+      "split": "train"
+    },
+    {
+      "index": 129,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 19,
+      "characters": 23705,
+      "sha256": "21173555a7b594108605a136b5ec841f5ac6f4c0d01fba48c2077e9cc6fac932",
+      "split": "validation"
+    },
+    {
+      "index": 130,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 20,
+      "characters": 16076,
+      "sha256": "44dcb1e39e8745a26c49bd86d3dce18a8eeb4e2fadce0641a1d24e2c5c7f767a",
+      "split": "train"
+    },
+    {
+      "index": 131,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 21,
+      "characters": 16724,
+      "sha256": "75aee2de03560fab71ccfef5f91bbb04e3785bdb00f3e89e6332c65be9dab529",
+      "split": "train"
+    },
+    {
+      "index": 132,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 22,
+      "characters": 22311,
+      "sha256": "5e2a8313ce2e3ec77312789e6d77d361310e1767603ed89e7e733d4100947a69",
+      "split": "train"
+    },
+    {
+      "index": 133,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 23,
+      "characters": 21956,
+      "sha256": "68925837b4e1e6a1f92cb7b478ed63e1abaab9579c4f04ce45f489b1fbb35164",
+      "split": "train"
+    },
+    {
+      "index": 134,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 24,
+      "characters": 17496,
+      "sha256": "23d7f51e1babd3a1bcfbbba7b1e6f0ecbc41e3d8371eec10a3103119d71ee290",
+      "split": "train"
+    },
+    {
+      "index": 135,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 25,
+      "characters": 26766,
+      "sha256": "2d3bda278cefcb458ff83130f0de263ac18f16d51b17728c18a2aaa1f1e93819",
+      "split": "train"
+    },
+    {
+      "index": 136,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 26,
+      "characters": 17254,
+      "sha256": "1fa1f6b997add5e01df631c08f790af2577230293232d0c234dd58c598f59f31",
+      "split": "train"
+    },
+    {
+      "index": 137,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 27,
+      "characters": 21420,
+      "sha256": "bf2347ed1c5bd1903414cf75cf06049c6856fdee930a595a6a6f1ec01f409a9b",
+      "split": "train"
+    },
+    {
+      "index": 138,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 28,
+      "characters": 18487,
+      "sha256": "f2322a637884d7e5f429161e07459bf600db5c2383dfb023226abe45cdd9b8b8",
+      "split": "train"
+    },
+    {
+      "index": 139,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 29,
+      "characters": 15878,
+      "sha256": "fb2baad1ffa8fa9426a73bbff637a7c2d55caf7f3ccce51576710f743c8a3fd5",
+      "split": "validation"
+    },
+    {
+      "index": 140,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 30,
+      "characters": 13426,
+      "sha256": "20dfd3d654a0cc1754d6d8290b21c01e64868591e0be3df73f7e7f1a1da3a190",
+      "split": "train"
+    },
+    {
+      "index": 141,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 31,
+      "characters": 20344,
+      "sha256": "dc4d8704cfdabe168692aefc3f55fd52ac1c1e65b061509c4ccd88e945817590",
+      "split": "train"
+    },
+    {
+      "index": 142,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 32,
+      "characters": 28340,
+      "sha256": "bb4ebdaff6031773e31ddef5739fbf1073e1ba9f2c557fdc72d0fc60ff6f5db6",
+      "split": "train"
+    },
+    {
+      "index": 143,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 33,
+      "characters": 15790,
+      "sha256": "52e1a51f1eb7b202a67f654abc3e822bbc614d5a25170d7c02ba6b1a8fbb1d61",
+      "split": "train"
+    },
+    {
+      "index": 144,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 34,
+      "characters": 21845,
+      "sha256": "cc7277558cede7fdf310687bc8fd57c64222dab87a20b1d08dfe9c8ed7247025",
+      "split": "train"
+    },
+    {
+      "index": 145,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 35,
+      "characters": 20197,
+      "sha256": "0de24fd74ff9f233892f320b268413a3e3b0aeb9249310a241dd09a13ec385e6",
+      "split": "train"
+    },
+    {
+      "index": 146,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 36,
+      "characters": 19019,
+      "sha256": "765cce2d3c590f2f4dfd44e51e761817308bf8def89274dd8cb3ef2d046a43d2",
+      "split": "train"
+    },
+    {
+      "index": 147,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 37,
+      "characters": 17584,
+      "sha256": "c36e29b1b55fc8cf58648e34ea67ccdac31398e05d0881291ac54cb3c8331d3a",
+      "split": "train"
+    },
+    {
+      "index": 148,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 38,
+      "characters": 26139,
+      "sha256": "5c1f18d4239bcf2d1b5282df7ee5fa437c15217e6da338cc22cd3fe9a275584a",
+      "split": "train"
+    },
+    {
+      "index": 149,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 39,
+      "characters": 9194,
+      "sha256": "b7af069f5dc1a4fdd6e45b9cc3994fdf7be9f5b00c2ab89f65a4d3921d948e17",
+      "split": "validation"
+    },
+    {
+      "index": 150,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 40,
+      "characters": 12381,
+      "sha256": "f7251a254fc065cd00eab8914f94ccea4e869759f2112949d4e7ce916917c375",
+      "split": "train"
+    },
+    {
+      "index": 151,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 41,
+      "characters": 16520,
+      "sha256": "248489e04c565f52cdf329b3275d47d239874395e9c1a3c6976a47ac3a7763b8",
+      "split": "train"
+    },
+    {
+      "index": 152,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 42,
+      "characters": 11939,
+      "sha256": "b2a130375bbbfb80af986fc14c9e08c658ccda7fd0707c9c6842feaf038f5207",
+      "split": "train"
+    },
+    {
+      "index": 153,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 43,
+      "characters": 9744,
+      "sha256": "c68e45adc0bc472107aaaa5f061406221e58306ddfd4d1eb57305f5133314782",
+      "split": "train"
+    },
+    {
+      "index": 154,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 44,
+      "characters": 17629,
+      "sha256": "f639050f1147907be0e0417778349dfc8c57be69f86dc06cd33af2c179cfb889",
+      "split": "train"
+    },
+    {
+      "index": 155,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 45,
+      "characters": 15876,
+      "sha256": "c2b80e1ca5fc3aff13b906555d588df70153c0afa52a20b8cba236d2e4dff952",
+      "split": "train"
+    },
+    {
+      "index": 156,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 46,
+      "characters": 20538,
+      "sha256": "8a56330669805608aaaa66bca3bbf4236258bb510041c3842877267d00b721b1",
+      "split": "train"
+    },
+    {
+      "index": 157,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 47,
+      "characters": 24997,
+      "sha256": "dbc31b421d36c463736e3d61eb6e338e6c8f2a317b54e2f1bbbc4d9f2c954b6f",
+      "split": "train"
+    },
+    {
+      "index": 158,
+      "gutenberg_id": 141,
+      "title": "Mansfield Park",
+      "chapter": 48,
+      "characters": 25868,
+      "sha256": "dbcde74cb22bcc4b9cb8e0bd1c92cd23bbdc45c196f58e04c3e85c25ed7a2323",
+      "split": "train"
+    },
+    {
+      "index": 159,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 1,
+      "characters": 17822,
+      "sha256": "75332017da233a204c699d1eabe8db590ccaa2b325b6089bf9517992a9dba818",
+      "split": "validation"
+    },
+    {
+      "index": 160,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 2,
+      "characters": 9888,
+      "sha256": "ba8b3612e0d1073e6fbda8aa55d43e3aaaef33c38279529f1a96159d5cd9e9fc",
+      "split": "train"
+    },
+    {
+      "index": 161,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 3,
+      "characters": 10619,
+      "sha256": "8780ca47ea9c8145b673d9efde58eff0dfc3bbbd6af41883463c198ea8ef0369",
+      "split": "train"
+    },
+    {
+      "index": 162,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 4,
+      "characters": 19050,
+      "sha256": "d924b77614563af6c9cb4d47162d90505070227c0f964818578fe72d0778418f",
+      "split": "train"
+    },
+    {
+      "index": 163,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 5,
+      "characters": 10682,
+      "sha256": "f3a7c517e82ab34a28abdc48aa1c5be048c6741b2f2ba65bb9e38d7cef38dc9b",
+      "split": "train"
+    },
+    {
+      "index": 164,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 6,
+      "characters": 15028,
+      "sha256": "1c09fef74684016f46f59c990e9e3c5d28081a13fc84bd6591203420423bdfda",
+      "split": "train"
+    },
+    {
+      "index": 165,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 7,
+      "characters": 13070,
+      "sha256": "ae8430a66986a6da3131c70ac41e80c8a34d1c19083ccab4d79c5620c33b972b",
+      "split": "train"
+    },
+    {
+      "index": 166,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 8,
+      "characters": 23292,
+      "sha256": "75ba57965f29dcd1db2bf71f4d63202d3722a3bfdbe0b3c6ea977f9c55f7acb5",
+      "split": "train"
+    },
+    {
+      "index": 167,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 9,
+      "characters": 25612,
+      "sha256": "6c0cc1053dcfc1b8c4178b118edfd40971e9b8a70a407420a95f2e78b25ccf00",
+      "split": "train"
+    },
+    {
+      "index": 168,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 10,
+      "characters": 14315,
+      "sha256": "8590ea5878519e0e795be712ab98e3f521c287806be8c7b90502db1ada3d491b",
+      "split": "train"
+    },
+    {
+      "index": 169,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 11,
+      "characters": 11959,
+      "sha256": "872117ce96f5682d7878e46dc266f2ab99c84dc96fc6136b51e02869d39cb8b2",
+      "split": "validation"
+    },
+    {
+      "index": 170,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 12,
+      "characters": 17542,
+      "sha256": "3d6e28c20d3de0cec32004c4021e95a727a4a5a8b40c489dfa5d120df125b77d",
+      "split": "train"
+    },
+    {
+      "index": 171,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 13,
+      "characters": 16519,
+      "sha256": "79380cf26defeec2999679b080b7027e2917adb2f0569b374a224d2bc4e2b7d9",
+      "split": "train"
+    },
+    {
+      "index": 172,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 14,
+      "characters": 13207,
+      "sha256": "81e94a01ce7d298bd17004490b9b2b54e8ba34544c83c10f77dc3ba91884a65e",
+      "split": "train"
+    },
+    {
+      "index": 173,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 15,
+      "characters": 18432,
+      "sha256": "b5643245fc0c6125e2528849437a9fd5875933e11b5a5beecdb55f1fe061f331",
+      "split": "train"
+    },
+    {
+      "index": 174,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 16,
+      "characters": 10627,
+      "sha256": "55676fdaf6e4d4aea0fe078642ba3a1cf29a971fd694b8641c1e1c8c2ee6aba8",
+      "split": "train"
+    },
+    {
+      "index": 175,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 17,
+      "characters": 6685,
+      "sha256": "65ef40b24dd705e06021fa5b23a8643e2115ed1686387875a136c92257d25799",
+      "split": "train"
+    },
+    {
+      "index": 176,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 18,
+      "characters": 13769,
+      "sha256": "6b8a88cdbd1ccb5549cbe98e501432743e38ef53315f8679ccb950ca85b0c561",
+      "split": "train"
+    },
+    {
+      "index": 177,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 19,
+      "characters": 16039,
+      "sha256": "73ee3ce57f19e8fccca90898db7624ff7857584cd63d37ba7a93b38079cce774",
+      "split": "train"
+    },
+    {
+      "index": 178,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 20,
+      "characters": 13788,
+      "sha256": "8361ab9a4c280f5142ca94d28f786efcf2bfb9de454d747eb6eb882da365046a",
+      "split": "train"
+    },
+    {
+      "index": 179,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 21,
+      "characters": 20954,
+      "sha256": "a11c7dc1462350c0de22248708336d614d18456100fa0fb454db720824798111",
+      "split": "validation"
+    },
+    {
+      "index": 180,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 22,
+      "characters": 9327,
+      "sha256": "bf524b806cd55b751a8f34087b08f4ba5718aef71628b281b4d1846a690197fb",
+      "split": "train"
+    },
+    {
+      "index": 181,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 23,
+      "characters": 18257,
+      "sha256": "c6ab3f818b386496f04ab72fd1a1067285d9cfbd27880cab07c54997009efb4d",
+      "split": "train"
+    },
+    {
+      "index": 182,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 24,
+      "characters": 16621,
+      "sha256": "ee006991924cabfe26d7e1483a03e847e8a04478014f66831f4886846d1a55fc",
+      "split": "train"
+    },
+    {
+      "index": 183,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 25,
+      "characters": 12735,
+      "sha256": "b10fc7a49d816cd5a3615b07f947678e576e59e9b679b012d37eb3ddac2d7fec",
+      "split": "train"
+    },
+    {
+      "index": 184,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 26,
+      "characters": 35544,
+      "sha256": "fa9df69b874c7cae29f0ddb06a302f8839c26b5fac9b8afd0f07b4267297f83f",
+      "split": "train"
+    },
+    {
+      "index": 185,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 27,
+      "characters": 16975,
+      "sha256": "b3180680ad66da9aeb195fbaf335f918c66d91b63a78acfe0f30eae20fc47611",
+      "split": "train"
+    },
+    {
+      "index": 186,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 28,
+      "characters": 11001,
+      "sha256": "a1d1a49bc140ea788430899478feca3b39299ab2b4372b3929cb2997686052fb",
+      "split": "train"
+    },
+    {
+      "index": 187,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 29,
+      "characters": 17816,
+      "sha256": "895e9b1b0a76cd1161fb9149ae15786299d841ec641243c67a58a2255c9fafb0",
+      "split": "train"
+    },
+    {
+      "index": 188,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 30,
+      "characters": 11820,
+      "sha256": "438816fe778dee6659c896ad299ce279b5346e380492f134159b81f9bdce50cc",
+      "split": "train"
+    },
+    {
+      "index": 189,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 31,
+      "characters": 10963,
+      "sha256": "5c95d83eb3b4fd4075a5d3183d7c3565c002437ed59950ba9c3fd726b818a0f0",
+      "split": "validation"
+    },
+    {
+      "index": 190,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 32,
+      "characters": 20801,
+      "sha256": "6df5efc9cde42ea4e29bf60e3083616ceabab87f1bfb47267fdf7ca56cff30e3",
+      "split": "train"
+    },
+    {
+      "index": 191,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 33,
+      "characters": 16618,
+      "sha256": "38067558135adbaa9843ad0b468f66be0f35e880a42dc4059789ab00c75645bf",
+      "split": "train"
+    },
+    {
+      "index": 192,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 34,
+      "characters": 17004,
+      "sha256": "b68e2b453cb9496aafdd3f21747d7fa9510e25d656d60d9f21a30d9fab97fa0a",
+      "split": "train"
+    },
+    {
+      "index": 193,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 35,
+      "characters": 11905,
+      "sha256": "bf8087557db4081a66262ca41ba254cc4b535d065cc9d15e35b330c1257ab811",
+      "split": "train"
+    },
+    {
+      "index": 194,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 36,
+      "characters": 15219,
+      "sha256": "e12109c137faaa557aedfdaf66d5202513d67e67f99dbef1e607cd7b55ee5d11",
+      "split": "train"
+    },
+    {
+      "index": 195,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 37,
+      "characters": 6990,
+      "sha256": "2729630fc2c198fdd809634617ef1279cafa2e18c6d06e4263a474dc1d994a15",
+      "split": "train"
+    },
+    {
+      "index": 196,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 38,
+      "characters": 24448,
+      "sha256": "21acb652a25a8b96456c1f58f0594402f2758fa67fe960e9d37d2c096d5ac701",
+      "split": "train"
+    },
+    {
+      "index": 197,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 39,
+      "characters": 9640,
+      "sha256": "9b790aa4bd0c3b2b388d5d51a9ada898c483cab80f86dbc918310ddd32f7d22f",
+      "split": "train"
+    },
+    {
+      "index": 198,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 40,
+      "characters": 11165,
+      "sha256": "ba73e8a5a508fa66e160f628ce4d8c3cf15fd7f25f373f76151ab81c07c9de46",
+      "split": "train"
+    },
+    {
+      "index": 199,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 41,
+      "characters": 16502,
+      "sha256": "990c680868f62fe59bd110928bc3f38bd21bdad1e5e931357413d4ed1652009d",
+      "split": "validation"
+    },
+    {
+      "index": 200,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 42,
+      "characters": 28246,
+      "sha256": "df8bc594357d8ee4e2133e9df3da6921473570092d92244e6f74cd8b2416dec3",
+      "split": "train"
+    },
+    {
+      "index": 201,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 43,
+      "characters": 18310,
+      "sha256": "ca7579cb23f76c268e8dc0cf0b3ffaf986d7011302b18babceeea5839b08e7b5",
+      "split": "train"
+    },
+    {
+      "index": 202,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 44,
+      "characters": 14968,
+      "sha256": "7befb77ce1bfb149ca96ce7db08cdb5a50906d04b9e428657ee5709e39cbcb21",
+      "split": "train"
+    },
+    {
+      "index": 203,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 45,
+      "characters": 13914,
+      "sha256": "e0152ad0eff051e3c3a680d0e0f4a33af094da3c00f26955f9c7972aeaa1e2fe",
+      "split": "train"
+    },
+    {
+      "index": 204,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 46,
+      "characters": 17211,
+      "sha256": "735cee7da937c03daec36ccd1c3e43b2d8a42511091d241ca9873e0af35e001a",
+      "split": "train"
+    },
+    {
+      "index": 205,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 47,
+      "characters": 24011,
+      "sha256": "0ebd2b2d63fe82952a550f1c35862a76676f84674c5b8808e868321165468af3",
+      "split": "train"
+    },
+    {
+      "index": 206,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 48,
+      "characters": 16798,
+      "sha256": "2f31ba183afeb750505fea0ab9b6830de849f5ededf09ae3e4370837d453c850",
+      "split": "train"
+    },
+    {
+      "index": 207,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 49,
+      "characters": 18684,
+      "sha256": "333eb11dfb74b490b2bd3eea8da4cf8ccfb4eff1287ac640d65b05c70be634cb",
+      "split": "train"
+    },
+    {
+      "index": 208,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 50,
+      "characters": 20022,
+      "sha256": "c41a83494b9f7b7c1ca9861c81d33009cf73fc3f37bd28a68a6a4481c7dbed8b",
+      "split": "train"
+    },
+    {
+      "index": 209,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 51,
+      "characters": 13080,
+      "sha256": "213971c62cdd50c777d9aea6dfd4ac1d7403fec9495c68c589fac0f016ff533c",
+      "split": "validation"
+    },
+    {
+      "index": 210,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 52,
+      "characters": 18122,
+      "sha256": "9e50332d5ff9d9b29803e352a40b86d415179bbb834fe5c83e7a2eebd5a4e031",
+      "split": "train"
+    },
+    {
+      "index": 211,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 53,
+      "characters": 17010,
+      "sha256": "cda8548b2688db8e2ae2572317f38027df127b3687840b651bb4856c7a76b6b1",
+      "split": "train"
+    },
+    {
+      "index": 212,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 54,
+      "characters": 20126,
+      "sha256": "87229df6fc6cded527e806bd158535a3af6ac34b29799c8155791cca1eaa1bd2",
+      "split": "train"
+    },
+    {
+      "index": 213,
+      "gutenberg_id": 158,
+      "title": "Emma",
+      "chapter": 55,
+      "characters": 6971,
+      "sha256": "ae5ed4da9495268161f22dfc77e2e5f55a5f993c6ab3b44545975d91139ced91",
+      "split": "train"
+    },
+    {
+      "index": 214,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 1,
+      "characters": 7901,
+      "sha256": "45ac163c0c1e1e44b8018ef187a39a5270181434bcd9ac8acc3ce1acc6849edc",
+      "split": "train"
+    },
+    {
+      "index": 215,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 2,
+      "characters": 12314,
+      "sha256": "563b976ae2a174487bb1e5812c379a73cd355d590bcf8ca8855642caf3b56772",
+      "split": "train"
+    },
+    {
+      "index": 216,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 3,
+      "characters": 9351,
+      "sha256": "9f4ee4ff430a1933f8370e2df9c02c5b4761a9e13fab82b0c271f9422b377ce1",
+      "split": "train"
+    },
+    {
+      "index": 217,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 4,
+      "characters": 7501,
+      "sha256": "a2ddbe30541cdd0c8122e43044fe699ffd6d0d69d0a6df42053f23d2feaea5d9",
+      "split": "train"
+    },
+    {
+      "index": 218,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 5,
+      "characters": 7207,
+      "sha256": "ba6ccfc1ca45fa1c45a86d0e03ef44100634adf559c3e7f7b16f0331538d675b",
+      "split": "train"
+    },
+    {
+      "index": 219,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 6,
+      "characters": 9015,
+      "sha256": "1a60fed0f4384de5f4753329d434e5dc29bb1c0cb851bc699635ef626da9cbdb",
+      "split": "validation"
+    },
+    {
+      "index": 220,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 7,
+      "characters": 15485,
+      "sha256": "4e2d3891c58da2d170b6a3165d0a8991104200c566a78fdfa3e5816f9bfde5e9",
+      "split": "train"
+    },
+    {
+      "index": 221,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 8,
+      "characters": 14944,
+      "sha256": "85c3f750c57771d480e3e09c4eff1e380218b2de1314f27bce914148c6c35850",
+      "split": "train"
+    },
+    {
+      "index": 222,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 9,
+      "characters": 18170,
+      "sha256": "784839bcb2ae9854b768be0ad7338e08f2e426fed1d6af291a42c31796497c73",
+      "split": "train"
+    },
+    {
+      "index": 223,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 10,
+      "characters": 21410,
+      "sha256": "b1b802eccab49ed131e31bd39308e9e5b6660d226959cd446d3d2327646ada00",
+      "split": "train"
+    },
+    {
+      "index": 224,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 11,
+      "characters": 16178,
+      "sha256": "2952b1e504d3d6a4975b954f391f34180abf2da4404f06f0801fa9ba86eb604a",
+      "split": "train"
+    },
+    {
+      "index": 225,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 12,
+      "characters": 11109,
+      "sha256": "3835a9dd790a630110245d31c85d226ac97f8f38d7fe3d8388b3bf79256184ae",
+      "split": "train"
+    },
+    {
+      "index": 226,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 13,
+      "characters": 17184,
+      "sha256": "46fc655c9d780b42dd7f37742da7046135695bd834aade7064fe36933890b8f1",
+      "split": "train"
+    },
+    {
+      "index": 227,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 14,
+      "characters": 18686,
+      "sha256": "56c1f6f91f44e0ffeea9616d2c03a3125ea7bb524241e35c79953b601ff51dad",
+      "split": "train"
+    },
+    {
+      "index": 228,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 15,
+      "characters": 17768,
+      "sha256": "3ed2b0207c91deb477852afb8b5d0cb01ffbb54ddc5601d4bb26e279e3d016e8",
+      "split": "train"
+    },
+    {
+      "index": 229,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 16,
+      "characters": 15193,
+      "sha256": "8a4d8c9f0ae131b4ce7026e7ab209206230dd7d9a381754864ce99776295760b",
+      "split": "validation"
+    },
+    {
+      "index": 230,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 17,
+      "characters": 8047,
+      "sha256": "ca521118adda17801a9dffd782d102012bdacd83e3ce85cd1dba844bd86a564e",
+      "split": "train"
+    },
+    {
+      "index": 231,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 18,
+      "characters": 11212,
+      "sha256": "8b7577fee75ec209a0b8326580d8f397eb87e3b94b535262316076e6e994fa07",
+      "split": "train"
+    },
+    {
+      "index": 232,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 19,
+      "characters": 8491,
+      "sha256": "01e9db5f0a9d525c4377e1786ff4ab86c45f1e0b87fc12e3cd273202a8ac749a",
+      "split": "train"
+    },
+    {
+      "index": 233,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 20,
+      "characters": 17954,
+      "sha256": "a29882a43d463204aa5c0213b63926f0da8498832fae54016975cb93efb10445",
+      "split": "train"
+    },
+    {
+      "index": 234,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 21,
+      "characters": 16799,
+      "sha256": "6707838fa100d8e17f94d20631a4faa7b6b608bae4227ff0c7427d924ac3bbed",
+      "split": "train"
+    },
+    {
+      "index": 235,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 22,
+      "characters": 19022,
+      "sha256": "186185f2223dd4b5e9e16bb69f044e249184b0b1f66ed11611645a8f750215f6",
+      "split": "train"
+    },
+    {
+      "index": 236,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 23,
+      "characters": 14715,
+      "sha256": "eba179ddd2df88249d1803c5a7b29955cb5a61686201765660f1cf1ae4cfcb04",
+      "split": "train"
+    },
+    {
+      "index": 237,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 24,
+      "characters": 15853,
+      "sha256": "f638b191bdb69fdd6cdceae913aba6e1cbdf2fdcae23e7f4b5b8003cfd3e7bfa",
+      "split": "train"
+    },
+    {
+      "index": 238,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 25,
+      "characters": 16503,
+      "sha256": "8b247880c37f02db33da4a8ccfd03e92fc84d5f668928faf0d0daf7a5e7946f8",
+      "split": "train"
+    },
+    {
+      "index": 239,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 26,
+      "characters": 14187,
+      "sha256": "146470beab72d454e182eb3d5738affde1ab42b513de5787d01a878021baecd9",
+      "split": "validation"
+    },
+    {
+      "index": 240,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 27,
+      "characters": 6904,
+      "sha256": "7b48e1751c7ba2589dba517cd97ef4a233dd7292c8b34a668eb23f843bd3c104",
+      "split": "train"
+    },
+    {
+      "index": 241,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 28,
+      "characters": 19460,
+      "sha256": "37ecac42d279f1170fe4806a7af11da4cf501d1db01e34e1d110b33565af56c3",
+      "split": "train"
+    },
+    {
+      "index": 242,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 29,
+      "characters": 18869,
+      "sha256": "0fe5ef04c9ac9667c01cf44016889bc6c061c396be3d6eb6e9d92cc0ef4729ef",
+      "split": "train"
+    },
+    {
+      "index": 243,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 30,
+      "characters": 16565,
+      "sha256": "2cc908b704fa69163185626f53688596ee6115c2e7072104cd059a2c2e765edb",
+      "split": "train"
+    },
+    {
+      "index": 244,
+      "gutenberg_id": 121,
+      "title": "Northanger Abbey",
+      "chapter": 31,
+      "characters": 7059,
+      "sha256": "efecb51cfe4344bca335d0a2d4c8740801e6a1e5527fd60719d0064c0090534a",
+      "split": "train"
+    },
+    {
+      "index": 245,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 1,
+      "characters": 15074,
+      "sha256": "fdcc311c575a0064f53eb6db36a957fbee0c651c0c152c104658a105d0f7980f",
+      "split": "train"
+    },
+    {
+      "index": 246,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 2,
+      "characters": 11274,
+      "sha256": "08b6b77db3ce60e08719ed48563642e1bc1036df7a716636d358161d4ab4cc49",
+      "split": "train"
+    },
+    {
+      "index": 247,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 3,
+      "characters": 15630,
+      "sha256": "ea9a1b75d84d0af7fd1fca8fac786fd2d6a5382229c171d98fdcb4215c92105b",
+      "split": "train"
+    },
+    {
+      "index": 248,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 4,
+      "characters": 10526,
+      "sha256": "c0b5eb122057443fe6f3a1421d22cb51c787b8012926aaa02c4f784a3c5c6279",
+      "split": "train"
+    },
+    {
+      "index": 249,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 5,
+      "characters": 18288,
+      "sha256": "49e7a734f2344cc2a31aa29896f92aa98b7b068e40492d27a17c88b99d5718d2",
+      "split": "validation"
+    },
+    {
+      "index": 250,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 6,
+      "characters": 21108,
+      "sha256": "d696d2c6c5b4ac6bdd46ae85b163d091050de872696aa09aad4e86ea5fec9d75",
+      "split": "train"
+    },
+    {
+      "index": 251,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 7,
+      "characters": 18454,
+      "sha256": "1dc21bb81c8109caad1494e4e3fbab2c8ea48401471297ce6526a84aa6775609",
+      "split": "train"
+    },
+    {
+      "index": 252,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 8,
+      "characters": 18360,
+      "sha256": "145d31cb6e4e46b357afba967e25efee68aea420b085770607b5c33956a6edf2",
+      "split": "train"
+    },
+    {
+      "index": 253,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 9,
+      "characters": 16028,
+      "sha256": "03bc8bdcdd44f343a8c8531ea138170e72d91ce5c084c18bde186ebd265e1c51",
+      "split": "train"
+    },
+    {
+      "index": 254,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 10,
+      "characters": 21493,
+      "sha256": "2584ac8d1b6fdb44b796b1936596ef4db95c453ca1eb51e8fe07ab79c359535c",
+      "split": "train"
+    },
+    {
+      "index": 255,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 11,
+      "characters": 17355,
+      "sha256": "043edd697eeaa1c83b231dcfa17be3bfd377402383b9ce8710303ed3fc9739b6",
+      "split": "train"
+    },
+    {
+      "index": 256,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 12,
+      "characters": 30691,
+      "sha256": "cf39b47bcf237ef0904b2fc8ab282cc5674a85f022ff579e8c724fc5a828ba34",
+      "split": "train"
+    },
+    {
+      "index": 257,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 13,
+      "characters": 15260,
+      "sha256": "1e14a39747c5db4c24ed629b991e87d6d20ede2c652a35b3009de8da72846670",
+      "split": "train"
+    },
+    {
+      "index": 258,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 14,
+      "characters": 13941,
+      "sha256": "90eb9e4322fbfdd6eb2c5e995561339d33373091321591954d727456356f0ae4",
+      "split": "train"
+    },
+    {
+      "index": 259,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 15,
+      "characters": 15706,
+      "sha256": "227497acedb657ea8c38c06bedf685a84c90df0787ccb1f8b7a42ffa367759ac",
+      "split": "validation"
+    },
+    {
+      "index": 260,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 16,
+      "characters": 13600,
+      "sha256": "cc2787e9b81869986e88015e02771557d4c372dc2ac2096322dbca304fe8ded1",
+      "split": "train"
+    },
+    {
+      "index": 261,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 17,
+      "characters": 19698,
+      "sha256": "7084d23441bc8ec82d97214ad9ecf68d4882abd913f447801f445c037990a131",
+      "split": "train"
+    },
+    {
+      "index": 262,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 18,
+      "characters": 22299,
+      "sha256": "d4cdc17a9b2b2e3a132380a0409a99263111f535ad9f2f226b25434f6439fbe3",
+      "split": "train"
+    },
+    {
+      "index": 263,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 19,
+      "characters": 13316,
+      "sha256": "033d23cf763ad673be55066297fc576456370ff92258e75778e26ba346528f08",
+      "split": "train"
+    },
+    {
+      "index": 264,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 20,
+      "characters": 19543,
+      "sha256": "c339b3ef40ffbce219ad29dce464e84f5e0b8fb138d7aeb494060fc54de6be7d",
+      "split": "train"
+    },
+    {
+      "index": 265,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 21,
+      "characters": 38008,
+      "sha256": "9dceeed998e7f92486ce1ad5992f4d3c216ee0bdbb3eb4c8ed6a0aa726abaf3e",
+      "split": "train"
+    },
+    {
+      "index": 266,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 22,
+      "characters": 32746,
+      "sha256": "f92827e6eb63636c50a63e9ed3e8d5ffdcecdc2ba148e47fef19cfd2fb0b2dd1",
+      "split": "train"
+    },
+    {
+      "index": 267,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 23,
+      "characters": 36427,
+      "sha256": "75d2dc9e0ece8d654096c8e2fa6e5a2a83435c47349f84116ae45fab5abfa00f",
+      "split": "train"
+    },
+    {
+      "index": 268,
+      "gutenberg_id": 105,
+      "title": "Persuasion",
+      "chapter": 24,
+      "characters": 8999,
+      "sha256": "f881eed01b4467ea9fc977630b5be44703d915d493be418423ddcceebaef766a",
+      "split": "train"
+    }
+  ]
+}

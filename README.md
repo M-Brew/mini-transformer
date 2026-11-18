@@ -55,15 +55,13 @@ pip install -e ".[dev]"
 
 ## Prepare the dataset
 
-Place a UTF-8 corpus at:
-
-`data/raw/corpus.txt`
-
-Then execute:
+The training corpus is Jane Austen's six novels from Project Gutenberg
+(public domain). See [data/DATASET.md](data/DATASET.md) for its source,
+license and preparation.
 
 ```bash
-python scripts/prepare_data.py \
-    --config configs/baseline.yaml
+python scripts/build_corpus.py --config configs/baseline.yaml
+python scripts/prepare_data.py --config configs/baseline.yaml
 ```
 
 ## Run tests

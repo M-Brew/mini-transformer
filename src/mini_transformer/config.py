@@ -44,31 +44,50 @@ class ModelConfig:
 
 @dataclass(frozen=True)
 class TrainingConfig:
-    batch_size: int
-    learning_rate: float
-    weight_decay: float
-    max_steps: int
-    eval_interval: int
-    gradient_clip: float
+    batch_size: int = 16
+    learning_rate: float = 3e-4
+    weight_decay: float = 0.01
+    max_steps: int = 10000
+    eval_interval: int = 250
+    gradient_clip: float = 1.0
+
+    warmup_steps: int = 500
+    min_learning_rate: float = 3e-5
+    eval_batches: int = 20
+    checkpoint_interval: int = 500
 
     def validate(self) -> None:
         if self.batch_size <= 0:
-            raise ValueError("batch_size must be positive")
+            raise ValueError("batch_size must be positive.")
 
         if self.learning_rate <= 0:
-            raise ValueError("learning_rate must be positive")
+            raise ValueError("learning_rate must be positive.")
 
         if self.weight_decay < 0:
-            raise ValueError("weight_decay cannot be negative")
+            raise ValueError("weight_decay cannot be negative.")
 
         if self.max_steps <= 0:
-            raise ValueError("max_steps must be positive")
+            raise ValueError("max_steps must be positive.")
 
         if self.eval_interval <= 0:
-            raise ValueError("eval_interval must be positive")
+            raise ValueError("eval_interval must be positive.")
 
         if self.gradient_clip < 0:
-            raise ValueError("gradient_clip cannot be negative")
+            raise ValueError("gradient_clip cannot be negative.")
+
+        if self.warmup_steps < 0:
+            raise ValueError("warmup_steps cannot be negative.")
+
+        if not 0 <= self.min_learning_rate <= self.learning_rate:
+            raise ValueError(
+                "min_learning_rate must be between zero and learning_rate."
+            )
+
+        if self.eval_batches <= 0:
+            raise ValueError("eval_batches must be positive.")
+
+        if self.checkpoint_interval <= 0:
+            raise ValueError("checkpoint_interval must be positive.")
 
 
 @dataclass(frozen=True)

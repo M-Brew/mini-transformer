@@ -17,6 +17,11 @@ training:
   eval_interval: 250
   gradient_clip: 1.0
 
+  warmup_steps: 500
+  min_learning_rate: 0.00003
+  eval_batches: 20
+  checkpoint_interval: 500
+
 data:
   input_path: data/raw/corpus.txt
   train_path: data/processed/train.pt

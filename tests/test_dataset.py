@@ -3,11 +3,15 @@ import pytest
 import torch
 
 from mini_transformer.dataset import (
+    DOCUMENT_SEPARATOR,
     LanguageModelDataset,
+    join_documents,
     load_token_ids,
     prepare_token_datasets,
     save_token_ids,
+    split_documents,
     split_tokens,
+    split_train_validation_documents,
 )
 
 
@@ -148,3 +152,54 @@ def test_save_and_load_token_ids(tmp_path):
 
     assert torch.equal(tokens, restored)
     assert restored.dtype == torch.long
+
+
+def test_documents_round_trip():
+    documents = ["First chapter.\n\nSecond paragraph.", "Second chapter."]
+
+    text = join_documents(documents)
+
+    assert text.count(DOCUMENT_SEPARATOR) == 2
+    assert split_documents(text) == documents
+
+
+def test_join_documents_rejects_embedded_separator():
+    with pytest.raises(ValueError):
+        join_documents([f"bad{DOCUMENT_SEPARATOR}document"])
+
+
+def test_join_documents_rejects_blank_document():
+    with pytest.raises(ValueError):
+        join_documents(["fine", "  \n"])
+
+
+def test_document_split_keeps_documents_whole():
+    documents = [f"document {index}" for index in range(20)]
+
+    train, validation = split_train_validation_documents(documents, 0.1)
+
+    assert len(validation) == 2
+    assert sorted(train + validation) == sorted(documents)
+    assert not set(train) & set(validation)
+
+
+def test_document_split_spreads_validation_through_corpus():
+    documents = [f"document {index}" for index in range(100)]
+
+    _, validation = split_train_validation_documents(documents, 0.1)
+
+    # Every 10th document is held out, not just the tail of the corpus.
+    assert validation == [f"document {index}" for index in range(9, 100, 10)]
+
+
+def test_document_split_is_deterministic():
+    documents = [f"document {index}" for index in range(37)]
+
+    assert split_train_validation_documents(
+        documents, 0.25
+    ) == split_train_validation_documents(documents, 0.25)
+
+
+def test_document_split_rejects_empty_partition():
+    with pytest.raises(ValueError):
+        split_train_validation_documents(["only one"], 0.1)

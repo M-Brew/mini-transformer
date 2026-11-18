@@ -2,13 +2,20 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
 import torch
 
 from mini_transformer.config import load_config
-from mini_transformer.dataset import save_token_ids
+from mini_transformer.dataset import (
+    DOCUMENT_SEPARATOR,
+    join_documents,
+    save_token_ids,
+    split_documents,
+    split_train_validation_documents,
+)
 from mini_transformer.tokenizer import CharacterTokenizer
 
 
@@ -46,12 +53,33 @@ def main() -> None:
     if not raw_text.strip():
         raise ValueError("Training corpus is empty")
 
-    split_index = int(
-        len(raw_text) * (1.0 - config.data.validation_fraction)
-    )
+    if DOCUMENT_SEPARATOR in raw_text:
+        # Hold out whole documents so no document spans both partitions.
+        train_documents, validation_documents = (
+            split_train_validation_documents(
+                split_documents(raw_text),
+                config.data.validation_fraction,
+            )
+        )
 
-    train_text = raw_text[:split_index]
-    validation_text = raw_text[split_index:]
+        train_text = join_documents(train_documents)
+        validation_text = join_documents(validation_documents)
+
+        split_details = {
+            "split_method": "documents",
+            "train_documents": len(train_documents),
+            "validation_documents": len(validation_documents),
+        }
+    else:
+        # A corpus without document boundaries is split contiguously.
+        split_index = int(
+            len(raw_text) * (1.0 - config.data.validation_fraction)
+        )
+
+        train_text = raw_text[:split_index]
+        validation_text = raw_text[split_index:]
+
+        split_details = {"split_method": "contiguous"}
 
     if not train_text or not validation_text:
         raise ValueError(
@@ -96,6 +124,10 @@ def main() -> None:
         "validation_tokens": len(validation_ids),
         "validation_fraction": config.data.validation_fraction,
         "unknown_token": tokenizer.UNK_TOKEN,
+        **split_details,
+        "corpus_sha256": hashlib.sha256(
+            raw_text.encode("utf-8")
+        ).hexdigest(),
     }
 
     metadata_path = train_path.parent / "metadata.json"
